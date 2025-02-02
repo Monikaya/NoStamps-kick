@@ -50,7 +50,7 @@ namespace NoStamps
                     {
                        
                         Log(sender.Username + " has been kicked from this server for using a stamp");
-                        kickPlayer(sender);
+                        KickPlayer(sender);
                         SendGlobalChatMessage(sender.Username + " has been kicked for using the Stamp mod!");
                     }
                 } 
