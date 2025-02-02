@@ -15,7 +15,7 @@ namespace NoStamps
         {
             base.onInit();
 
-            Log("NoStamps | developed by yeeter");
+            Log("NoStamps-kick | developed by yeeter and modified by monikaya");
         }
 
         //public override void onPlayerJoin(WFPlayer player)
