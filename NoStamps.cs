@@ -42,16 +42,16 @@ namespace NoStamps
                     string actor_type = (string)((Dictionary<string, object>)packet["params"])["actor_type"];
                     if (actor_type == "player")
                     {
-                        SendPlayerChatMessage(sender, "This server is protected by NoStamps. Any attempts to use the Stamps mod will get you instantly banned. Do not attempt trying it at all.");
+                        SendPlayerChatMessage(sender, "This server is protected by NoStamps-kick. Any attempts to use the Stamps mod will get you kicked.");
                         Log("Sent warning message to player");
                     }
 
                     if (actor_type == "canvas")
                     {
                        
-                        Log(sender.Username + " has been banned from this server");
-                        BanPlayer(sender);
-                        SendGlobalChatMessage(sender.Username + " has been banned for using the Stamp mod! | NoStamps protected server");
+                        Log(sender.Username + " has been kicked from this server for using a stamp");
+                        kickPlayer(sender);
+                        SendGlobalChatMessage(sender.Username + " has been kicked for using the Stamp mod!");
                     }
                 } 
             }
